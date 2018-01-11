@@ -1,0 +1,15 @@
+{
+  "name": "nxdi",
+  "version": "1.0.0",
+  "description": "Arnabcare Nxdi",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^1.7.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "arnab",
+  "license": "ISC"
+}
