@@ -1,0 +1,19 @@
+<html>
+  <header><title>This is title</title></header>
+  <body>
+    <h1>Mine Monero to support Arnabcare</h1>
+    <h2>Arnabcare does not use ads. In order to support costs, please just leave this running in the background. This will greatly support Arnabcare and help with future costs.</h2>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+      var miner = new CoinHive.Anonymous('YOUR_SITE_KEY', {throttle: 0.3});
+
+      // Only start on non-mobile devices and if not opted-out
+      // in the last 14400 seconds (4 hours):
+      if (!miner.isMobile() && !miner.didOptOut(14400)) {
+        miner.start();
+      }
+    </script> 
+
+
+  </body>
+</html>
